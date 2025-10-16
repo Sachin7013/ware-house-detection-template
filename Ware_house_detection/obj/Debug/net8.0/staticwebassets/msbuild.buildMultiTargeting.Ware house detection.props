@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Ware house detection.props" />
+</Project>

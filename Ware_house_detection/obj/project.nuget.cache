@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "CNNDmV4fIFM=",
+  "success": true,
+  "projectFilePath": "C:\\AlgoOrange Task\\Portfolio templates\\Ware house detection\\ware_house_detection\\Ware house detection.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Manoj\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.14\\microsoft.netcore.app.runtime.win-x64.8.0.14.nupkg.sha512",
+    "C:\\Users\\Manoj\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.14\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.14.nupkg.sha512",
+    "C:\\Users\\Manoj\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.14\\microsoft.aspnetcore.app.runtime.win-x64.8.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

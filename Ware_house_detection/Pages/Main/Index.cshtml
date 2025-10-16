@@ -1,0 +1,1066 @@
+﻿@page
+@model Ware_house_detection.Pages.Main.IndexModel
+@{
+}
+
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" data-navigation-type="default" data-navbar-horizontal-shape="default">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title and Favicon-->
+    <!-- ===============================================-->
+    <title>AlgoOrange Vision AI - Ware house Servaillance</title>
+    <link rel="icon" type="image/jpg" href="/Logo/logo.jpg">
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="../assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="../assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+    <script src="../vendors/simplebar/simplebar.min.js"></script>
+    <script src="../assets/js/config.js"></script>
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="../vendors/simplebar/simplebar.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="../assets/css/theme-rtl.min.css" type="text/css" rel="stylesheet" id="style-rtl">
+    <link href="../assets/css/theme.min.css" type="text/css" rel="stylesheet" id="style-default">
+    <link href="../assets/css/user-rtl.min.css" type="text/css" rel="stylesheet" id="user-style-rtl">
+    <link href="../assets/css/user.min.css" type="text/css" rel="stylesheet" id="user-style-default">
+    <script>
+      var phoenixIsRTL = window.config.config.phoenixIsRTL;
+      if (phoenixIsRTL) {
+        var linkDefault = document.getElementById('style-default');
+        var userLinkDefault = document.getElementById('user-style-default');
+        linkDefault.setAttribute('disabled', true);
+        userLinkDefault.setAttribute('disabled', true);
+        document.querySelector('html').setAttribute('dir', 'rtl');
+      } else {
+        var linkRTL = document.getElementById('style-rtl');
+        var userLinkRTL = document.getElementById('user-style-rtl');
+        linkRTL.setAttribute('disabled', true);
+        userLinkRTL.setAttribute('disabled', true);
+      }
+    </script>
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-vertical navbar-expand-lg">
+        <div class="collapse navbar-collapse" id="navbarVerticalCollapse">
+          <!-- scrollbar removed-->
+          <div class="navbar-vertical-content">
+            <ul class="navbar-nav flex-column" id="navbarVerticalNav">
+              <li class="nav-item">
+                <!-- parent pages-->
+                <div class="nav-item-wrapper"><a class="nav-link dropdown-indicator label-1" href="#nv-dashboard" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="nv-dashboard">
+                    <div class="d-flex align-items-center">
+                      <div class="dropdown-indicator-icon-wrapper"><span class="fas fa-caret-right dropdown-indicator-icon"></span></div><span class="nav-link-icon"><span data-feather="monitor"></span></span><span class="nav-link-text">Dashboard</span>
+                    </div>
+                  </a>
+                  <div class="parent-wrapper label-1">
+                    <ul class="nav collapse parent show" data-bs-parent="#navbarVerticalCollapse" id="nv-dashboard">
+                      <li class="collapsed-nav-item-title d-none">Dashboard
+                      </li>
+                      <li class="nav-item"><a class="nav-link active" href="../dashboard/construction-overview.html">
+                          <div class="d-flex align-items-center"><span class="nav-link-text">Site Overview</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="../dashboard/live-monitoring.html">
+                          <div class="d-flex align-items-center"><span class="nav-link-text">Live Monitoring</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="../dashboard/safety-analytics.html">
+                          <div class="d-flex align-items-center"><span class="nav-link-text">Safety Analytics</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="../dashboard/worker-tracking.html">
+                          <div class="d-flex align-items-center"><span class="nav-link-text">Worker Tracking</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="../dashboard/equipment-monitoring.html">
+                          <div class="d-flex align-items-center"><span class="nav-link-text">Equipment Monitor</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="../dashboard/incident-reports.html">
+                          <div class="d-flex align-items-center"><span class="nav-link-text">Incident Reports</span><span class="badge ms-2 badge badge-phoenix badge-phoenix-danger">alert</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-vertical-footer">
+          <button class="btn navbar-vertical-toggle border-0 fw-semibold w-100 white-space-nowrap d-flex align-items-center"><span class="uil uil-left-arrow-to-left fs-8"></span><span class="uil uil-arrow-from-right fs-8"></span><span class="navbar-vertical-footer-text ms-2">Collapsed View</span></button>
+        </div>
+      </nav>
+      <nav class="navbar navbar-top fixed-top navbar-expand" id="navbarDefault">
+        <div class="collapse navbar-collapse justify-content-between">
+          <div class="navbar-logo">
+
+            <button class="btn navbar-toggler navbar-toggler-humburger-icon hover-bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse" aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span class="toggle-line"></span></span></button>
+            <a class="navbar-brand me-1 me-sm-3" href="../index.html">
+              <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                  <img src="/Logo/logo.jpg" alt="AlgoOrange Vision AI" width="40" height="40" style="border-radius: 8px; object-fit: cover;" />
+                  <h5 class="logo-text ms-2 d-none d-sm-block">AlgoOrange Vision AI</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="search-box navbar-top-search-box d-none d-lg-block" data-list='{"valueNames":["title"]}' style="width:25rem;">
+            <form class="position-relative" data-bs-toggle="search" data-bs-display="static">
+              <input class="form-control search-input fuzzy-search rounded-pill form-control-sm" type="search" placeholder="Search..." aria-label="Search" />
+              <span class="fas fa-search search-box-icon"></span>
+
+            </form>
+            <div class="btn-close position-absolute end-0 top-50 translate-middle cursor-pointer shadow-none" data-bs-dismiss="search">
+              <button class="btn btn-link p-0" aria-label="Close"></button>
+            </div>
+          </div>
+          <ul class="navbar-nav navbar-nav-icons flex-row">
+            <li class="nav-item">
+              <div class="theme-control-toggle fa-icon-wait px-2">
+                <input class="form-check-input ms-0 theme-control-toggle-input" type="checkbox" data-theme-control="phoenixTheme" value="dark" id="themeControlToggle" />
+                <label class="mb-0 theme-control-toggle-label theme-control-toggle-light" for="themeControlToggle" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="moon"></span></label>
+                <label class="mb-0 theme-control-toggle-label theme-control-toggle-dark" for="themeControlToggle" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Switch theme" style="height:32px;width:32px;"><span class="icon" data-feather="sun"></span></label>
+              </div>
+            </li>
+            <li class="nav-item d-lg-none"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchBoxModal"><span data-feather="search" style="height:19px;width:19px;margin-bottom: 2px;"></span></a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" style="min-width: 2.25rem" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-auto-close="outside"><span class="d-block" style="height:20px;width:20px;"><span data-feather="bell" style="height:20px;width:20px;"></span></span></a>
+
+              <div class="dropdown-menu dropdown-menu-end notification-dropdown-menu py-0 shadow border navbar-dropdown-caret" id="navbarDropdownNotfication" aria-labelledby="navbarDropdownNotfication">
+                <div class="card position-relative border-0">
+                  <div class="card-header p-2">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="text-body-emphasis mb-0">Notifications</h5>
+                      <button class="btn btn-link p-0 fs-9 fw-normal" type="button">Mark all as read</button>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="scrollbar-overlay" style="height: 27rem;">
+                      <div class="px-2 px-sm-3 py-3 notification-card position-relative read border-bottom">
+                        <div class="d-flex align-items-center justify-content-between position-relative">
+                          <div class="d-flex">
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../assets/img/team/40x40/30.webp" alt="" />
+                            </div>
+                            <div class="flex-1 me-sm-3">
+                              <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
+                              <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">10m</span></p>
+                              <p class="text-body-secondary fs-9 mb-0"><span class="me-1 fas fa-clock"></span><span class="fw-bold">10:41 AM </span>August 7,2021</p>
+                            </div>
+                          </div>
+                          <div class="dropdown notification-dropdown">
+                            <button class="btn fs-10 btn-sm dropdown-toggle dropdown-caret-none transition-none" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10 text-body"></span></button>
+                            <div class="dropdown-menu py-2"><a class="dropdown-item" href="#!">Mark as unread</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
+                        <div class="d-flex align-items-center justify-content-between position-relative">
+                          <div class="d-flex">
+                            <div class="avatar avatar-m status-online me-3">
+                              <div class="avatar-name rounded-circle"><span>J</span></div>
+                            </div>
+                            <div class="flex-1 me-sm-3">
+                              <h4 class="fs-9 text-body-emphasis">Jane Foster</h4>
+                              <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>📅</span>Created an event.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">20m</span></p>
+                              <p class="text-body-secondary fs-9 mb-0"><span class="me-1 fas fa-clock"></span><span class="fw-bold">10:20 AM </span>August 7,2021</p>
+                            </div>
+                          </div>
+                          <div class="dropdown notification-dropdown">
+                            <button class="btn fs-10 btn-sm dropdown-toggle dropdown-caret-none transition-none" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10 text-body"></span></button>
+                            <div class="dropdown-menu py-2"><a class="dropdown-item" href="#!">Mark as unread</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
+                        <div class="d-flex align-items-center justify-content-between position-relative">
+                          <div class="d-flex">
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle avatar-placeholder" src="../assets/img/team/40x40/avatar.webp" alt="" />
+                            </div>
+                            <div class="flex-1 me-sm-3">
+                              <h4 class="fs-9 text-body-emphasis">Jessie Samson</h4>
+                              <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10">1h</span></p>
+                              <p class="text-body-secondary fs-9 mb-0"><span class="me-1 fas fa-clock"></span><span class="fw-bold">9:30 AM </span>August 7,2021</p>
+                            </div>
+                          </div>
+                          <div class="dropdown notification-dropdown">
+                            <button class="btn fs-10 btn-sm dropdown-toggle dropdown-caret-none transition-none" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10 text-body"></span></button>
+                            <div class="dropdown-menu py-2"><a class="dropdown-item" href="#!">Mark as unread</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
+                        <div class="d-flex align-items-center justify-content-between position-relative">
+                          <div class="d-flex">
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../assets/img/team/40x40/57.webp" alt="" />
+                            </div>
+                            <div class="flex-1 me-sm-3">
+                              <h4 class="fs-9 text-body-emphasis">Kiera Anderson</h4>
+                              <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>💬</span>Mentioned you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
+                              <p class="text-body-secondary fs-9 mb-0"><span class="me-1 fas fa-clock"></span><span class="fw-bold">9:11 AM </span>August 7,2021</p>
+                            </div>
+                          </div>
+                          <div class="dropdown notification-dropdown">
+                            <button class="btn fs-10 btn-sm dropdown-toggle dropdown-caret-none transition-none" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10 text-body"></span></button>
+                            <div class="dropdown-menu py-2"><a class="dropdown-item" href="#!">Mark as unread</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="px-2 px-sm-3 py-3 notification-card position-relative unread border-bottom">
+                        <div class="d-flex align-items-center justify-content-between position-relative">
+                          <div class="d-flex">
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../assets/img/team/40x40/59.webp" alt="" />
+                            </div>
+                            <div class="flex-1 me-sm-3">
+                              <h4 class="fs-9 text-body-emphasis">Herman Carter</h4>
+                              <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👤</span>Tagged you in a comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
+                              <p class="text-body-secondary fs-9 mb-0"><span class="me-1 fas fa-clock"></span><span class="fw-bold">10:58 PM </span>August 7,2021</p>
+                            </div>
+                          </div>
+                          <div class="dropdown notification-dropdown">
+                            <button class="btn fs-10 btn-sm dropdown-toggle dropdown-caret-none transition-none" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10 text-body"></span></button>
+                            <div class="dropdown-menu py-2"><a class="dropdown-item" href="#!">Mark as unread</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="px-2 px-sm-3 py-3 notification-card position-relative read ">
+                        <div class="d-flex align-items-center justify-content-between position-relative">
+                          <div class="d-flex">
+                            <div class="avatar avatar-m status-online me-3"><img class="rounded-circle" src="../assets/img/team/40x40/58.webp" alt="" />
+                            </div>
+                            <div class="flex-1 me-sm-3">
+                              <h4 class="fs-9 text-body-emphasis">Benjamin Button</h4>
+                              <p class="fs-9 text-body-highlight mb-2 mb-sm-3 fw-normal"><span class='me-1 fs-10'>👍</span>Liked your comment.<span class="ms-2 text-body-quaternary text-opacity-75 fw-bold fs-10"></span></p>
+                              <p class="text-body-secondary fs-9 mb-0"><span class="me-1 fas fa-clock"></span><span class="fw-bold">10:18 AM </span>August 7,2021</p>
+                            </div>
+                          </div>
+                          <div class="dropdown notification-dropdown">
+                            <button class="btn fs-10 btn-sm dropdown-toggle dropdown-caret-none transition-none" type="button" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent"><span class="fas fa-ellipsis-h fs-10 text-body"></span></button>
+                            <div class="dropdown-menu py-2"><a class="dropdown-item" href="#!">Mark as unread</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer p-0 border-top border-translucent border-0">
+                    <div class="my-2 text-center fw-bold fs-10 text-body-tertiary text-opactity-85"><a class="fw-bolder" href="../pages/notifications.html">Notification history</a></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="row gy-3 mb-4 justify-content-between">
+          <div class="col-xxl-6">
+            <h2 class="mb-2 text-body-emphasis">Live Camera Surveillance</h2>
+            <h5 class="text-body-tertiary fw-semibold mb-4">Check your cameras live all time with AlgoOrange Vision AI</h5>
+            <div class="row g-3 mb-4 align-items-stretch">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body p-3">
+                    <div class="d-flex flex-column h-100">
+                      <div class="flex-grow-1">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex align-items-center icon-wrapper-sm shadow-primary-100" style="transform: rotate(-7.45deg);"><span class="fa-solid fa-video text-primary fs-7 z-1 ms-2"></span></div>
+                          <p class="text-body-tertiary fs-9 mb-0 ms-2 mt-3">Active Cameras</p>
+                        </div>
+                        <p class="text-primary mt-2 fs-6 fw-bold mb-0 mb-sm-4">8 <span class="fs-8 text-body lh-lg">Cameras</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body p-3">
+                    <div class="d-flex flex-column h-100">
+                      <div class="flex-grow-1">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex align-items-center icon-wrapper-sm shadow-primary-100" style="transform: rotate(-7.45deg);"><span class="fa-solid fa-users text-primary fs-7 z-1 ms-2"></span></div>
+                          <p class="text-body-tertiary fs-9 mb-0 ms-2 mt-3">Active Workers</p>
+                        </div>
+                        <p class="text-primary mt-2 fs-6 fw-bold mb-0 mb-sm-4">15 <span class="fs-8 text-body lh-lg">Workers</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body p-3">
+                    <div class="d-flex flex-column h-100">
+                      <div class="flex-grow-1">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex align-items-center icon-wrapper-sm shadow-danger-100" style="transform: rotate(-7.45deg);"><span class="fa-solid fa-exclamation-triangle text-danger fs-7 z-1 ms-2"></span></div>
+                          <p class="text-body-tertiary fs-9 mb-0 ms-2 mt-3">Safety Violations</p>
+                        </div>
+                        <p class="text-danger mt-2 fs-6 fw-bold mb-0 mb-sm-4">2 <span class="fs-8 text-body lh-lg">Violations</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body p-3">
+                    <div class="d-flex flex-column h-100">
+                      <div class="flex-grow-1">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex align-items-center icon-wrapper-sm shadow-info-100" style="transform: rotate(-7.45deg);"><span class="fa-solid fa-hard-hat text-info fs-7 z-1 ms-2"></span></div>
+                          <p class="text-body-tertiary fs-9 mb-0 ms-2 mt-3">People Wearing Helmet</p>
+                        </div>
+                        <p class="text-info mt-2 fs-6 fw-bold mb-0 mb-sm-4">12 <span class="fs-8 text-body lh-lg">People</span></p>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body p-3">
+                    <div class="d-flex flex-column h-100">
+                      <div class="flex-grow-1">
+                        <div class="d-flex align-items-center">
+                          <div class="d-flex align-items-center icon-wrapper-sm shadow-info-100" style="transform: rotate(-7.45deg);"><span class="fa-solid fa-hard-hat text-info fs-7 z-1 ms-2"></span></div>
+                          <p class="text-body-tertiary fs-9 mb-0 ms-2 mt-3">People Wearing safety vest</p>
+                        </div>
+                        <p class="text-info mt-2 fs-6 fw-bold mb-0 mb-sm-4">12 <span class="fs-8 text-body lh-lg">People</span></p>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Live Camera Feeds Section -->
+            <div class="row g-3 mb-4">
+              <div class="col-12">
+                <h3 class="mb-3 text-body-emphasis">Camera Feeds</h3>
+                <p class="text-body-tertiary mb-4">Real-time detection across 4 monitoring zones</p>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-4">
+              <!-- Camera 1 - Zone A Entrance -->
+              <div class="col-lg-6 col-xl-4">
+                <div class="card h-100">
+                  <div class="card-header bg-body-tertiary py-2">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <span class="fa-solid fa-video text-primary me-2 fs-8"></span>
+                        <div>
+                          <h6 class="mb-0 fs-8">Camera 1 <small class="text-body-tertiary">- Zone A</small></h6>
+                        </div>
+                      </div>
+                      <span class="badge badge-phoenix badge-phoenix-danger fs-9">LIVE</span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="position-relative">
+                      <video class="w-100 camera-video" data-camera="1" style="height: 200px; object-fit: cover; cursor: pointer;" autoplay muted loop onclick="openCameraChat(1)">
+                        <source src="/Live Video/camara 1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <div class="position-absolute top-0 start-0 p-2">
+                        <small class="badge bg-dark bg-opacity-75 text-white" id="camera1-timestamp">15:23:09</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Camera 2 - Zone B Loading Bay -->
+              <div class="col-lg-6 col-xl-4">
+                <div class="card h-100">
+                  <div class="card-header bg-body-tertiary py-2">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <span class="fa-solid fa-video text-primary me-2 fs-8"></span>
+                        <div>
+                          <h6 class="mb-0 fs-8">Camera 2 <small class="text-body-tertiary">- Zone B</small></h6>
+                        </div>
+                      </div>
+                      <span class="badge badge-phoenix badge-phoenix-danger fs-9">LIVE</span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="position-relative">
+                      <video class="w-100 camera-video" data-camera="2" style="height: 200px; object-fit: cover; cursor: pointer;" autoplay muted loop onclick="openCameraChat(2)">
+                        <source src="/Live Video/camara 2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <div class="position-absolute top-0 start-0 p-2">
+                        <small class="badge bg-dark bg-opacity-75 text-white" id="camera2-timestamp">15:23:09</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Camera 3 - Zone C Assembly -->
+              <div class="col-lg-6 col-xl-4">
+                <div class="card h-100">
+                  <div class="card-header bg-body-tertiary py-2">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <span class="fa-solid fa-video text-primary me-2 fs-8"></span>
+                        <div>
+                          <h6 class="mb-0 fs-8">Camera 3 <small class="text-body-tertiary">- Zone C</small></h6>
+                        </div>
+                      </div>
+                      <span class="badge badge-phoenix badge-phoenix-danger fs-9">LIVE</span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="position-relative">
+                      <video class="w-100 camera-video" data-camera="3" style="height: 200px; object-fit: cover; cursor: pointer;" autoplay muted loop onclick="openCameraChat(3)">
+                        <source src="/Live Video/camara 3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <div class="position-absolute top-0 start-0 p-2">
+                        <small class="badge bg-dark bg-opacity-75 text-white" id="camera3-timestamp">15:23:09</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Camera 4 - Zone D Storage -->
+              <div class="col-lg-6 col-xl-4">
+                <div class="card h-100">
+                  <div class="card-header bg-body-tertiary py-2">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="d-flex align-items-center">
+                        <span class="fa-solid fa-video text-primary me-2 fs-8"></span>
+                        <div>
+                          <h6 class="mb-0 fs-8">Camera 4 <small class="text-body-tertiary">- Zone D</small></h6>
+                        </div>
+                      </div>
+                      <span class="badge badge-phoenix badge-phoenix-danger fs-9">LIVE</span>
+                    </div>
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="position-relative">
+                      <video class="w-100 camera-video" data-camera="4" style="height: 200px; object-fit: cover; cursor: pointer;" autoplay muted loop onclick="openCameraChat(4)">
+                        <source src="/Live Video/camara 4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                      <div class="position-absolute top-0 start-0 p-2">
+                        <small class="badge bg-dark bg-opacity-75 text-white" id="camera4-timestamp">15:23:09</small>
+                      </div>
+                      <div class="position-absolute top-0 end-0 p-2">
+                        <small class="badge bg-danger">VIOLATION</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </main>
+
+
+
+    <!-- Ask Algo Floating Button -->
+    <a class="card setting-toggle" href="#settings-offcanvas" data-bs-toggle="offcanvas">
+        <div class="card-body d-flex align-items-center px-2 py-1">
+            <div class="position-relative rounded-start" style="height:34px;width:28px">
+                <div class="settings-popover">
+                    <span class="ripple">
+                        <span class="fa-spin position-absolute all-0 d-flex flex-center">
+                            <span class="icon-spin position-absolute all-0 d-flex flex-center">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.7369 12.3941L19.1989 12.1065C18.4459 11.7041 18.0843 10.8487 18.0843 9.99495C18.0843 9.14118 18.4459 8.28582 19.1989 7.88336L19.7369 7.59581C19.9474 7.47484 20.0316 7.23291 19.9474 7.03131C19.4842 5.57973 18.6843 4.28943 17.6738 3.20075C17.5053 3.03946 17.2527 2.99914 17.0422 3.12011L16.393 3.46714C15.6883 3.84379 14.8377 3.74529 14.1476 3.3427C14.0988 3.31422 14.0496 3.28621 14.0002 3.25868C13.2568 2.84453 12.7055 2.10629 12.7055 1.25525V0.70081C12.7055 0.499202 12.5371 0.297594 12.2845 0.257272C10.7266 -0.105622 9.16879 -0.0653007 7.69516 0.257272C7.44254 0.297594 7.31623 0.499202 7.31623 0.70081V1.23474C7.31623 2.09575 6.74999 2.8362 5.99824 3.25599C5.95774 3.27861 5.91747 3.30159 5.87744 3.32493C5.15643 3.74527 4.26453 3.85902 3.53534 3.45302L2.93743 3.12011C2.72691 2.99914 2.47429 3.03946 2.30587 3.20075C1.29538 4.28943 0.495411 5.57973 0.0322686 7.03131C-0.051939 7.23291 0.0322686 7.47484 0.242788 7.59581L0.784376 7.8853C1.54166 8.29007 1.92694 9.13627 1.92694 9.99495C1.92694 10.8536 1.54166 11.6998 0.784375 12.1046L0.242788 12.3941C0.0322686 12.515 -0.051939 12.757 0.0322686 12.9586C0.495411 14.4102 1.29538 15.7005 2.30587 16.7891C2.47429 16.9504 2.72691 16.9907 2.93743 16.8698L3.58669 16.5227C4.29133 16.1461 5.14131 16.2457 5.8331 16.6455C5.88713 16.6767 5.94159 16.7074 5.99648 16.7375C6.75162 17.1511 7.31623 17.8941 7.31623 18.7552V19.2891C7.31623 19.4425 7.41373 19.5959 7.55309 19.696C7.64066 19.7589 7.74815 19.7843 7.85406 19.8046C9.35884 20.0925 10.8609 20.0456 12.2845 19.7729C12.5371 19.6923 12.7055 19.4907 12.7055 19.2891V18.7346C12.7055 17.8836 13.2568 17.1454 14.0002 16.7312C14.0496 16.7037 14.0988 16.6757 14.1476 16.6472C14.8377 16.2446 15.6883 16.1461 16.393 16.5227L17.0422 16.8698C17.2527 16.9907 17.5053 16.9504 17.6738 16.7891C18.7264 15.7005 19.4842 14.4102 19.9895 12.9586C20.0316 12.757 19.9474 12.515 19.7369 12.3941ZM10.0109 13.2005C8.1162 13.2005 6.64257 11.7893 6.64257 9.97478C6.64257 8.20063 8.1162 6.74905 10.0109 6.74905C11.8634 6.74905 13.3792 8.20063 13.3792 9.97478C13.3792 11.7893 11.8634 13.2005 10.0109 13.2005Z" fill="#2A7BE4"></path>
+                                </svg>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+            <small class="text-uppercase text-body-tertiary fw-bold py-2 pe-2 ps-1 rounded-end">Ask Algo</small>
+        </div>
+    </a>
+
+
+    <!-- Offcanvas AI Chat -->
+    <div class="offcanvas offcanvas-end settings-panel border-0" id="settings-offcanvas" tabindex="-1" aria-labelledby="settings-offcanvas" style="height: 100vh;">
+        <div class="offcanvas-header align-items-start border-bottom flex-column border-translucent" style="height: 100%; display: flex; flex-direction: column;">
+            <div class="card bg-body-emphasis w-100" style="height: 100%; display: flex; flex-direction: column;">
+                <!-- Header -->
+                <div class="card-header d-flex flex-between-center px-4 py-3 border-bottom border-translucent" style="flex-shrink: 0;">
+                    <h5 class="mb-0 d-flex align-items-center gap-2">
+                        <img src="/Logo/logo.jpg" alt="AlgoOrange Vision AI" width="24" height="24" style="border-radius: 4px; object-fit: cover;" class="me-2" />
+                        Algo Vision Assistant
+                        <span class="fa-solid fa-circle text-success fs-11"></span>
+                    </h5>
+                    <div class="btn-reveal-trigger">
+                        <button class="btn btn-link p-0 dropdown-toggle dropdown-caret-none transition-none d-flex" type="button" id="support-chat-dropdown" data-bs-toggle="dropdown" data-boundary="window" aria-haspopup="true" aria-expanded="false" data-bs-reference="parent">
+                            <span class="fas fa-ellipsis-h text-body"></span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end py-2" aria-labelledby="support-chat-dropdown">
+                            <a class="dropdown-item" href="#">Request a callback</a>
+                            <a class="dropdown-item" href="#">Search in chat</a>
+                            <a class="dropdown-item" href="#">Show history</a>
+                            <a class="dropdown-item" href="#">Report to Admin</a>
+                            <a class="dropdown-item btn-support-chat" href="#" data-bs-dismiss="offcanvas">Close Support</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Chat Messages Container -->
+                <div class="card-body chat d-flex flex-column" style="flex-grow: 1; overflow-y: auto; padding: 16px;">
+                    <div id="chat-content-body"></div>
+                    <div id="typing-indicator" class="ms-2 mb-2 text-muted d-none d-flex flex-column align-items-center justify-content-center w-100">
+                        <i class="fa fa-spinner fa-spin"></i> Intelligence Incoming...
+                    </div>
+                </div>
+                <!-- Footer -->
+                <div class="card-footer d-flex align-items-center gap-2 border-top border-translucent ps-3 pe-4 py-3" style="flex-shrink: 0;border:none">
+                    <div class="d-flex align-items-center flex-1 gap-3 border border-translucent rounded-pill px-4" style="border-radius: 8px !important;">
+                        <input id="offcanvas-chat-textarea" class="form-control outline-none border-0 flex-1 fs-9 px-0" type="text" placeholder="Write message" style="flex: 1; border: none; outline: none;" />
+                        <label class="btn btn-link d-flex p-0 text-body-quaternary fs-9 border-0" for="supportChatPhotos" style="cursor: pointer;"><span class="fa-solid fa-image"></span></label>
+                        <input class="d-none" type="file" accept="image/*" id="supportChatPhotos" />
+                        <label class="btn btn-link d-flex p-0 text-body-quaternary fs-9 border-0" for="supportChatAttachment" style="cursor: pointer;"><span class="fa-solid fa-paperclip"></span></label>
+                        <input class="d-none" type="file" id="supportChatAttachment" />
+                    </div>
+                    <button class="btn p-0 border-0 chatsend-btn" id="chatsend-btn" style="cursor: pointer;"><span class="fa-solid fa-paper-plane fs-9"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="../vendors/popper/popper.min.js"></script>
+    <script src="../vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="../vendors/anchorjs/anchor.min.js"></script>
+    <script src="../vendors/is/is.min.js"></script>
+    <script src="../vendors/fontawesome/all.min.js"></script>
+    <script src="../vendors/lodash/lodash.min.js"></script>
+    <script src="../vendors/list.js/list.min.js"></script>
+    <script src="../vendors/feather-icons/feather.min.js"></script>
+    <script src="../vendors/dayjs/dayjs.min.js"></script>
+    <script src="../vendors/echarts/echarts.min.js"></script>
+    <script src="../assets/js/phoenix.js"></script>
+    <script src="../assets/js/dashboards/crm-dashboard.js"></script>
+
+    <!-- AI Chat JavaScript -->
+    <script>
+        let aiChatContext = null;
+        
+        // Phoenix Theme Toggle
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            const themeIcon = document.getElementById('themeIcon');
+            
+            html.setAttribute('data-bs-theme', newTheme);
+            document.body.setAttribute('data-bs-theme', newTheme);
+            
+            if (newTheme === 'dark') {
+                themeIcon.className = 'fas fa-moon';
+            } else {
+                themeIcon.className = 'fas fa-sun';
+            }
+            
+            // Store theme preference
+            localStorage.setItem('phoenixTheme', newTheme);
+        }
+        
+        // Initialize theme from localStorage
+        function initializeTheme() {
+            const savedTheme = localStorage.getItem('phoenixTheme') || 'dark';
+            const html = document.documentElement;
+            const themeIcon = document.getElementById('themeIcon');
+            
+            html.setAttribute('data-bs-theme', savedTheme);
+            document.body.setAttribute('data-bs-theme', savedTheme);
+            
+            if (themeIcon) {
+                themeIcon.className = savedTheme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+            }
+        }
+
+        // Enhanced AlgoCommon object with evidence display functionality
+        const AlgoCommon = {
+            createMessageContainer: function(message, isUser, includeImage = false, imagePath = null) {
+                const chatBody = document.getElementById('chat-content-body');
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `d-flex ${isUser ? 'justify-content-end' : 'justify-content-start'} mb-3`;
+                messageDiv.style.padding = '0 20px';
+                
+                // Create message container with avatar for bot messages
+                if (!isUser) {
+                    const avatarDiv = document.createElement('div');
+                    avatarDiv.className = 'me-2 flex-shrink-0';
+                    avatarDiv.innerHTML = `
+                        <div class="rounded-circle" style="width: 28px; height: 28px; background: #f8fafc; border: 1px solid #e5e7eb; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                            <img src="/Logo/logo.jpg" alt="AI" class="rounded-circle" style="width: 22px; height: 22px; object-fit: cover;">
+                        </div>
+                    `;
+                    messageDiv.appendChild(avatarDiv);
+                }
+                
+                const bubbleContainer = document.createElement('div');
+                bubbleContainer.className = 'flex-grow-1';
+                
+                const bubbleDiv = document.createElement('div');
+                bubbleDiv.className = `message-bubble ${isUser ? 'user' : 'bot'}`;
+                bubbleDiv.style.cssText = isUser ? 
+                    'background: #2563eb; color: white; padding: 12px 16px; border-radius: 18px 18px 4px 18px; max-width: 80%; word-wrap: break-word;' :
+                    'background: #f1f5f9; color: #334155; padding: 12px 16px; border-radius: 18px 18px 18px 4px; max-width: 80%; word-wrap: break-word;';
+                
+                // Create message content
+                let messageContent = message;
+                if (includeImage && imagePath) {
+                    console.log('Displaying image with path:', imagePath);
+                    messageContent += `
+                        <div class="mt-3">
+                            <img src="${imagePath}" alt="Evidence Frame" class="img-fluid rounded" style="max-width: 100%; height: auto; cursor: pointer; border: 1px solid #e5e7eb;" onclick="this.style.transform = this.style.transform ? '' : 'scale(1.2)'; this.style.zIndex = this.style.zIndex ? '' : '1000'; this.style.position = this.style.position ? '' : 'relative';" onerror="console.error('Image failed to load:', this.src); this.style.display='none'; this.nextElementSibling.innerHTML='❌ Image not found';">
+                            <small class="d-block mt-2" style="color: #6b7280; font-size: 12px;">Click to enlarge</small>
+                        </div>
+                    `;
+                }
+                
+                bubbleDiv.innerHTML = messageContent;
+                
+                // Add timestamp
+                const timeDiv = document.createElement('div');
+                timeDiv.className = 'message-time';
+                timeDiv.style.cssText = 'font-size: 11px; color: #64748b; margin-top: 4px; text-align: ' + (isUser ? 'right' : 'left');
+                timeDiv.textContent = new Date().toLocaleTimeString('en-US', { 
+                    hour: '2-digit', 
+                    minute: '2-digit',
+                    hour12: true 
+                });
+                
+                bubbleContainer.appendChild(bubbleDiv);
+                bubbleContainer.appendChild(timeDiv);
+                messageDiv.appendChild(bubbleContainer);
+                chatBody.appendChild(messageDiv);
+                
+                // Scroll to bottom smoothly
+                const chatContainer = chatBody.parentElement;
+                chatContainer.scrollTo({
+                    top: chatContainer.scrollHeight,
+                    behavior: 'smooth'
+                });
+                
+                return bubbleDiv;
+            },
+
+            getEvidenceForCamera: function(cameraNumber) {
+                // Evidence mapping based on actual folder structure
+                const evidenceMap = {
+                    1: ['/evidence/camara 1/Screenshot 2025-10-13 165235.png', '/evidence/camara 1/Screenshot 2025-10-13 165310.png'],
+                    2: ['/evidence/camara 2/Screenshot 2025-10-13 165433.png', '/evidence/camara 2/Screenshot 2025-10-13 165440.png', 
+                        '/evidence/camara 2/Screenshot 2025-10-13 165445.png', '/evidence/camara 2/Screenshot 2025-10-13 165448.png', 
+                        '/evidence/camara 2/Screenshot 2025-10-13 165453.png'],
+                    3: ['/evidence/camara 3/Screenshot 2025-10-13 165640.png', '/evidence/camara 3/Screenshot 2025-10-13 165644.png',
+                        '/evidence/camara 3/Screenshot 2025-10-13 165649.png'],
+                    4: ['/evidence/camara 4/Screenshot 2025-10-13 165829.png'],
+                };
+                
+                return evidenceMap[cameraNumber] || [];
+            },
+
+            extractCameraNumber: function(message) {
+                // Extract camera number from message
+                const cameraMatch = message.match(/camera\s*(\d+)/i);
+                if (cameraMatch) {
+                    return parseInt(cameraMatch[1]);
+                }
+                
+                // Check for number patterns
+                const numberMatch = message.match(/(\d+)/);
+                if (numberMatch) {
+                    const num = parseInt(numberMatch[1]);
+                    if (num >= 1 && num <= 8) {
+                        return num;
+                    }
+                }
+                
+                return null;
+            },
+
+            displayEvidence: function(cameraNumber, violationType = 'no helmet') {
+                console.log(`🔍 Displaying evidence for Camera ${cameraNumber}, type: ${violationType}`);
+                const evidenceFiles = this.getEvidenceForCamera(cameraNumber);
+                console.log(`📁 Evidence files found:`, evidenceFiles);
+                
+                if (evidenceFiles.length === 0) {
+                    console.log(`❌ No evidence files for Camera ${cameraNumber}`);
+                    return `No evidence found for Camera ${cameraNumber}. This camera may not have recorded any helmet violations.`;
+                }
+                
+                // Display first evidence file with message
+                const evidenceFile = evidenceFiles[0];
+                const message = `Evidence found for Camera ${cameraNumber}: ${violationType} violation detected. Here's the captured frame:`;
+                console.log(`🖼️ Showing evidence file: ${evidenceFile}`);
+                
+                // Create message with image
+                setTimeout(() => {
+                    console.log(`📤 Creating message container with image`);
+                    this.createMessageContainer(message, false, true, evidenceFile);
+                    
+                    // If multiple evidence files, show additional ones
+                    if (evidenceFiles.length > 1) {
+                        setTimeout(() => {
+                            console.log(`📤 Creating additional evidence message`);
+                            this.createMessageContainer(`Additional evidence from Camera ${cameraNumber}:`, false, true, evidenceFiles[1]);
+                        }, 1000);
+                    }
+                }, 500);
+                
+                return `Retrieving evidence for Camera ${cameraNumber}...`;
+            },
+            
+            sendChatMessage: async function(payload) {
+                // Simulate typing delay
+                await new Promise(resolve => setTimeout(resolve, 800));
+                
+                // Get response from hardcoded system
+                const response = this.getHardcodedResponse(payload.message);
+                
+                // Check if this is an evidence request that needs special handling
+                const lowerMessage = payload.message.toLowerCase().trim();
+                if (lowerMessage.includes('evidence') || 
+                    lowerMessage.includes('not wearing helmet') || 
+                    lowerMessage.includes('no helmet') || 
+                    lowerMessage.includes('without helmet') ||
+                    (lowerMessage.includes('violation') && (lowerMessage.includes('camera') || /\d+/.test(lowerMessage))) ||
+                    lowerMessage.includes('show frame') || 
+                    lowerMessage.includes('show image')) {
+                    
+                    const cameraNumber = this.extractCameraNumber(payload.message);
+                    if (cameraNumber) {
+                        // For evidence requests, the displayEvidence function handles the image display
+                        // Return the initial response, images will be shown via setTimeout in displayEvidence
+                        return response;
+                    }
+                }
+                
+                return response;
+            },
+            
+            getHardcodedResponse: function(message) {
+                const lowerMessage = message.toLowerCase().trim();
+                console.log(`💬 Processing message: "${message}" -> "${lowerMessage}"`);
+                
+                // Greetings
+                if (lowerMessage === 'hi') {
+                    return 'Hi! This is Algo Vision AI. What can I help you with?';
+                } else if (lowerMessage === 'hello') {
+                    return 'Hello! This is Algo Vision AI. What can I help you with?';
+                } else if (lowerMessage === 'hey') {
+                    return 'Hey there! This is Algo Vision AI. What can I help you with?';
+                }
+
+                // Evidence and Violation Questions
+                else if (lowerMessage.includes('evidence') || 
+                         lowerMessage.includes('show me') || 
+                         lowerMessage.includes('not ware helmet') ||
+                         lowerMessage.includes('not wear helmet') ||
+                         lowerMessage.includes('not wearing helmet') || 
+                         lowerMessage.includes('no helmet') || 
+                         lowerMessage.includes('without helmet') ||
+                         lowerMessage.includes('violation') ||
+                         lowerMessage.includes('show frame') ||
+                         lowerMessage.includes('show image')) {
+                    
+                    console.log(`🎯 Evidence request detected! aiChatContext:`, aiChatContext);
+                    const cameraNumber = this.extractCameraNumber(lowerMessage);
+                    console.log(`🔢 Extracted camera number: ${cameraNumber}`);
+                    
+                    if (cameraNumber) {
+                        console.log(`📹 Using extracted camera number: ${cameraNumber}`);
+                        return this.displayEvidence(cameraNumber, 'helmet violation');
+                    } else if (aiChatContext && aiChatContext.selectedCamera) {
+                        console.log(`📹 Using context camera: ${aiChatContext.selectedCamera}`);
+                        return this.displayEvidence(aiChatContext.selectedCamera, 'helmet violation');
+                    } else {
+                        console.log(`❌ No camera context found`);
+                        return 'Please specify which camera you want evidence from. You can type "evidence camera 2" or click directly on any camera video first.';
+                    }
+                }
+                
+                // Helmet Detection Questions
+                else if (lowerMessage.includes('how many helmet')) {
+                    return 'Our system has detected 892 helmets out of 1,247 total frames processed.';
+                } else if (lowerMessage.includes('helmet detection')) {
+                    return 'Helmet detection is an AI-powered system that automatically identifies whether workers are wearing safety helmets. Our system analyzes each frame to ensure workplace safety compliance.';
+                } else if (lowerMessage.includes('accuracy')) {
+                    return 'Our current helmet detection accuracy is 94.2%. The system has successfully detected 892 helmets out of 1,247 total frames processed.';
+                }
+                
+                // Safety and Violations
+                else if (lowerMessage.includes('safety') || lowerMessage.includes('violation')) {
+                    return 'There are currently 2 safety violations detected in the system. These violations occur when workers are identified without proper helmet protection in zones D and G.';
+                }
+                
+                // Default response for unrecognized input
+                else {
+                    return "I'm Algo Vision AI, your helmet detection assistant. I can help you with helmet detection analysis, safety violations, system statistics, and evidence viewing. Try asking about 'helmet detection', 'accuracy', 'evidence', or click on a camera first.";
+                }
+            }
+        };
+
+        // Camera click handler function
+        function openCameraChat(cameraNumber) {
+            console.log(`🎥 Opening chat for Camera ${cameraNumber}`);
+            
+            // Set camera context
+            aiChatContext = {
+                selectedCamera: cameraNumber,
+                chatBoxId: `camera_${cameraNumber}_chat`,
+                chatTabId: 'camera_surveillance',
+                entityId: `camera_${cameraNumber}`,
+                entityType: 'camera_feed',
+                controlId: `camera_${cameraNumber}_controls`
+            };
+            
+            // Open the chat
+            openAIChat({
+                selectedCamera: cameraNumber,
+                contextMessage: `You've selected Camera ${cameraNumber}. I can help you analyze this camera's feed, show evidence of safety violations, check helmet compliance, or provide detailed reports. What would you like to know about Camera ${cameraNumber}?`
+            });
+        }
+
+        // Mock API functions (keeping for compatibility)
+        async function sendChatMessage(payload) {
+            return AlgoCommon.sendChatMessage(payload);
+        }
+
+        async function getFollowupSuggestions() {
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve(`
+<strong>Quick Actions:</strong><br>
+• Show safety violations<br>
+• Camera status report<br>
+• Worker compliance summary<br>
+• Generate incident report<br>
+• Check helmet detection stats
+                    `);
+                }, 800);
+            });
+        }
+
+        function openAIChat(options) {
+            console.log('🚀 Opening AI Chat with options:', options);
+            
+            const offcanvasElement = document.getElementById('settings-offcanvas');
+            if (!offcanvasElement) {
+                console.error('❌ Chat offcanvas element not found!');
+                return;
+            }
+            
+            console.log('✅ Found offcanvas element');
+            
+            // Check if Bootstrap is available
+            if (typeof bootstrap === 'undefined') {
+                console.error('❌ Bootstrap is not loaded!');
+                return;
+            }
+            
+            try {
+                // Initialize or get existing offcanvas instance
+                let offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+                if (!offcanvas) {
+                    console.log('🔧 Creating new offcanvas instance');
+                    offcanvas = new bootstrap.Offcanvas(offcanvasElement);
+                }
+                
+                // Show the offcanvas
+                console.log('📱 Showing offcanvas');
+                offcanvas.show();
+            } catch (error) {
+                console.error('❌ Error initializing offcanvas:', error);
+                return;
+            }
+            
+            // Update context
+            aiChatContext = options || {};
+            
+            // Clear previous messages
+            const chatBox = document.getElementById('chat-content-body');
+            if (chatBox) {
+                chatBox.innerHTML = '';
+                
+                // Add context message if provided
+                if (options && options.contextMessage) {
+                    setTimeout(() => {
+                        AlgoCommon.createMessageContainer(options.contextMessage, false);
+                    }, 300);
+                }
+            }
+        }
+
+        async function offcanvasSendMessage() {
+            const inputField = document.getElementById("offcanvas-chat-textarea");
+            const message = inputField.value.trim();
+            
+            if (message === "") return;
+
+            // User message bubble
+            AlgoCommon.createMessageContainer(message, true);
+            inputField.value = "";
+
+            // Show typing indicator
+            const typingIndicator = document.getElementById("typing-indicator");
+            if (typingIndicator) {
+                typingIndicator.classList.remove("d-none");
+            }
+
+            // Prepare payload
+            const payload = {
+                message: message,
+                user_id: "construction_user",
+                chat_box_id: aiChatContext?.chatBoxId || "construction_surveillance_chat",
+                chatTab_id: aiChatContext?.chatTabId || "surveillance",
+                entity_id: aiChatContext?.entityId || "",
+                entity_type: aiChatContext?.entityType || "surveillance_dashboard",
+                control_id: aiChatContext?.controlId || ""
+            };
+
+            try {
+                // Send message to AI using AlgoCommon
+                const data = await AlgoCommon.sendChatMessage(payload);
+                
+                if (typingIndicator) {
+                    typingIndicator.classList.add("d-none");
+                }
+
+                // Bot response bubble
+                AlgoCommon.createMessageContainer(data, false);
+
+            } catch (error) {
+                if (typingIndicator) {
+                    typingIndicator.classList.add("d-none");
+                }
+                AlgoCommon.createMessageContainer('Failed to get response from AI. Please try again.', false);
+            }
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Chat send button click handler
+            const sendBtn = document.getElementById("chatsend-btn");
+            if (sendBtn) {
+                sendBtn.addEventListener("click", offcanvasSendMessage);
+            }
+            
+            // Enter key handler for chat input
+            const chatInput = document.getElementById("offcanvas-chat-textarea");
+            if (chatInput) {
+                chatInput.addEventListener("keypress", function(e) {
+                    if (e.key === "Enter") {
+                        offcanvasSendMessage();
+                    }
+                });
+            }
+            
+            // Open AI Chat when Ask Algo button is clicked
+            const askAlgoBtn = document.querySelector('[href="#settings-offcanvas"]');
+            if (askAlgoBtn) {
+                askAlgoBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    openAIChat({
+                        apiUrl: 'http://127.0.0.1:8000/construction/surveillance_context',
+                        chatBoxId: 'construction_surveillance_chat',
+                        chatTabId: 'surveillance_dashboard',
+                        entityId: 'construction_site_1',
+                        entityType: 'surveillance_dashboard',
+                        controlId: 'camera_monitoring',
+                        contextMessage: "Welcome to AlgoOrange Construction Site Surveillance AI Assistant! I can help you with camera monitoring, safety compliance, incident analysis, and worker tracking. What would you like to know?"
+                    });
+                });
+            }
+        });
+    </script>
+
+    <!-- Dynamic Camera Timestamps Script -->
+    <script>
+        function updateCameraTimestamps() {
+            const now = new Date();
+            
+            // Create slightly different timestamps for each camera to simulate real feeds
+            const cameras = [
+                { id: 'camera1-timestamp', offset: 0 },
+                { id: 'camera2-timestamp', offset: -2 },
+                { id: 'camera3-timestamp', offset: -1 },
+                { id: 'camera4-timestamp', offset: -3 },
+                { id: 'camera5-timestamp', offset: -1 },
+                { id: 'camera6-timestamp', offset: -4 },
+                { id: 'camera7-timestamp', offset: -2 },
+                { id: 'camera8-timestamp', offset: -1 }
+            ];
+            
+            cameras.forEach(camera => {
+                const element = document.getElementById(camera.id);
+                if (element) {
+                    // Add random seconds offset to simulate different camera sync times
+                    const cameraTime = new Date(now.getTime() + (camera.offset * 1000));
+                    const timeString = cameraTime.toLocaleTimeString('en-US', { 
+                        hour12: false,
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        second: '2-digit'
+                    });
+                    element.textContent = timeString;
+                }
+            });
+        }
+        
+        // Update timestamps immediately when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            updateCameraTimestamps();
+            // Update every second to show live time
+            setInterval(updateCameraTimestamps, 1000);
+        });
+    </script>
+
+  </body>
+
+</html>

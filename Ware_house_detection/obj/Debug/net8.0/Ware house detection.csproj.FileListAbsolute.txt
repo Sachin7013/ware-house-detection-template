@@ -1,0 +1,33 @@
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\bin\Debug\net8.0\appsettings.Development.json
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\bin\Debug\net8.0\appsettings.json
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\bin\Debug\net8.0\Ware house detection.staticwebassets.runtime.json
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\bin\Debug\net8.0\Ware house detection.staticwebassets.endpoints.json
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\bin\Debug\net8.0\Ware house detection.exe
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\bin\Debug\net8.0\Ware house detection.deps.json
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\bin\Debug\net8.0\Ware house detection.runtimeconfig.json
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\bin\Debug\net8.0\Ware house detection.dll
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\bin\Debug\net8.0\Ware house detection.pdb
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.GeneratedMSBuildEditorConfig.editorconfig
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.AssemblyInfoInputs.cache
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.AssemblyInfo.cs
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.csproj.CoreCompileInputs.cache
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.MvcApplicationPartsAssemblyInfo.cache
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.RazorAssemblyInfo.cache
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.RazorAssemblyInfo.cs
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\scopedcss\bundle\Ware house detection.styles.css
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\scopedcss\projectbundle\Ware house detection.bundle.scp.css
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\staticwebassets.build.json
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\staticwebassets.development.json
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\staticwebassets\msbuild.Ware house detection.Microsoft.AspNetCore.StaticWebAssets.props
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\staticwebassets\msbuild.Ware house detection.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\staticwebassets\msbuild.build.Ware house detection.props
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Ware house detection.props
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Ware house detection.props
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\staticwebassets.pack.json
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.dll
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\refint\Ware house detection.dll
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.pdb
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.genruntimeconfig.cache
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\ref\Ware house detection.dll

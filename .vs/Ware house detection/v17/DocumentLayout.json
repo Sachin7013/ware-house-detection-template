@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\AlgoOrange Task\\Portfolio templates\\Ware house detection\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60A7190F-6DCB-4417-B10A-7CC80AD3C475}|Ware house detection\\Ware house detection.csproj|c:\\algoorange task\\portfolio templates\\ware house detection\\ware house detection\\pages\\main\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{60A7190F-6DCB-4417-B10A-7CC80AD3C475}|Ware house detection\\Ware house detection.csproj|solutionrelative:ware house detection\\pages\\main\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\AlgoOrange Task\\Portfolio templates\\Ware house detection\\Ware house detection\\Pages\\Main\\Index.cshtml",
+              "RelativeDocumentMoniker": "Ware house detection\\Pages\\Main\\Index.cshtml",
+              "ToolTip": "C:\\AlgoOrange Task\\Portfolio templates\\Ware house detection\\Ware house detection\\Pages\\Main\\Index.cshtml",
+              "RelativeToolTip": "Ware house detection\\Pages\\Main\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-13T04:46:39.066Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
