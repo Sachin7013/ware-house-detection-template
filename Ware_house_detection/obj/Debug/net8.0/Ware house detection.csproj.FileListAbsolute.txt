@@ -31,3 +31,4 @@ C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection
 C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.pdb
 C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.genruntimeconfig.cache
 C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\ref\Ware house detection.dll
+C:\AlgoOrange Task\Portfolio templates\Ware house detection\ware_house_detection\obj\Debug\net8.0\Ware house detection.sourcelink.json
