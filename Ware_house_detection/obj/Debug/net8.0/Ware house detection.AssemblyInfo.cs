@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ware house detection")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fda67b68d8be5a573f8e5f51034ca6c9665d8fc0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+511bc0dee610f5c0be785782f842097fab71fec5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ware house detection")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ware house detection")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
